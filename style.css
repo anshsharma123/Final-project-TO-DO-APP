@@ -1,0 +1,87 @@
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color, #ec0c62);
+    color: var(--text-color, #0147f9);
+  }
+  
+  .app {
+    width: 400px;
+    background: var(--app-bg, #dc55f7);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(138, 22, 139, 0.2);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  #sort-options button {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #aab439;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #theme-toggle {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #b6a433;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: var(--task-bg, #f9f9f9);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .task.low {
+    border-left: 5px solid green;
+  }
+  
+  .task.medium {
+    border-left: 5px solid orange;
+  }
+  
+  .task.high {
+    border-left: 5px solid red;
+  }
+  
+  .task.overdue {
+    border-left: 5px solid darkred;
+    background-color: #ffe6e6;
+  }
+  
+  /* Dark mode variables */
+  body.dark {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --app-bg: #1e1e1e;
+    --task-bg: #2a2a2a;
+  }
+  
